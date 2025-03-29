@@ -1,82 +1,70 @@
-/* Reset Defaults */
-* {
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
+    background-color: #f4f4f4;
 }
 
-/* Body Styling */
-body {
-    background-color: #121212;
-    color: white;
+.container {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 100px;
 }
 
-/* Title Section */
-.title-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #121212; /* Matches body background */
-    padding: 20px 0;
-    transition: 0.3s ease;
-    z-index: 1000;
+h1 {
+    font-size: 3em;
+    color: #333;
 }
 
-.title {
-    font-size: 72px; /* 1.2x bigger */
-    font-weight: bold;
-    transition: font-size 0.3s ease;
-}
-
-/* Content Sections */
-.content {
-    margin-top: 150px;
-    padding: 50px;
-    font-size: 20px;
-}
-
-.section {
-    height: 100vh;
-    padding: 50px;
+/* Rectangle Container */
+.rectangles-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.section:nth-child(even) {
-    background-color: #1a1a1a;
-}
-
-/* Download Text */
-.download-text {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Download Button */
-.download-button {
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 20px;
+.rectangle {
+    background-color: #007bff;
     color: white;
-    background-color: purple;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Adjust width if needed */
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
 }
 
-.download-button:hover {
-    background-color: #a020f0; /* Lighter purple on hover */
+.rectangle h2 {
+    margin: 0;
+    font-size: 1.5em;
 }
 
-/* Growing Image */
-#growing-image {
-    width: 300px; /* Default size */
-    transition: transform 0.3s ease;
+.rectangle p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.rectangle:hover {
+    background-color: #0056b3;
+}
+
+/* Download Section */
+.download-section {
+    margin-top: 50px;
+}
+
+.download-section button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-section button:hover {
+    background-color: #0056b3;
 }
