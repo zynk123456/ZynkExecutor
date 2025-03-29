@@ -85,8 +85,8 @@ body {
 .rectangles-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px; /* Less space between title and rectangles */
-    margin-bottom: 30px; /* Less space between rectangles and download */
+    margin-top: 20px; /* Reduced space between title and rectangles */
+    margin-bottom: 20px; /* Reduced space between rectangles and download */
 }
 
 .rectangle {
@@ -101,8 +101,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
+/* Hover Effect */
+.rectangle:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Text inside Rectangles */
 .rectangle-text {
     color: white;
     padding: 10px;
